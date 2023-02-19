@@ -33,6 +33,6 @@ jobs:
         with:
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          file: .docker/Dockerfile
+          file: .docker/build/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
